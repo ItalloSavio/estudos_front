@@ -21,3 +21,12 @@ Esse espaço é destinado para documentar perguntas, dúvidas e pensamento crít
         console.log("executou");
     })();
     ```
+
+--- Increment
+1. Diferença de ++increment e increment++?
+
+--- Closures
+1. Como funcionam closures?
+2. Para que serve closures?
+3. Como utilizar closures?
+4. Fazer o link de closures com call stack.

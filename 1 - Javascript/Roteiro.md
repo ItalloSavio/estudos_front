@@ -1,9 +1,9 @@
 Degrau 1: JavaScript (S4 a S23)
 Já estudei, mas a regra de pular só vale para o que fizeres sozinho e explicares. Consulta o javascript.info e a MDN quando travar.
-[ ] S4. Escopo e hoisting: prevê a saída de 5 trechos antes de rodar.
-[ ] S5. Execution context e call stack: desenha a pilha de um código com 3 funções.
-[ ] S6. Closures: cria counter() e once(fn).
-[ ] S7. Closures na prática: escreve debounce(fn, ms) do zero.
+[x] S4. Escopo e hoisting: prevê a saída de 5 trechos antes de rodar.
+[x] S5. Execution context e call stack: desenha a pilha de um código com 3 funções.
+[x] S6. Closures: cria counter().
+[ ] S7. Closures na prática: escreve once(fn), debounce(fn, ms) do zero.
 [ ] S8. this, call e bind: corrige 5 trechos com o this errado.
 [ ] S9. reduce: faz soma, contagem e groupBy.
 [ ] S10. Reescreve map, filter e reduce à mão.
