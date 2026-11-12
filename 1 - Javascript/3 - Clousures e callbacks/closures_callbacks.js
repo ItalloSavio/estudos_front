@@ -30,10 +30,44 @@ console.log(c2());
  * -> Mas counter() devolveu countFuncion, que ficou guardada em c2, e o código dela usa proximo.
  * 
  * dia 10/11: 
- * Explicar por que acontece esse movimento em C2.
- * Explicar melhor como funcionam closures
+ * Explicar por que acontece esse movimento em C2. 
+ * Acontece por conta do execution context, o js isola cada nova execução da chamada de função.
+ * Explicar melhor como funcionam closures:
+ * Closures são funções aninhadas contendo uma função mais externa e outra interna, na interna, é capturado o escopo lexico da externa, pegando variaveis ou parametros da externa. Tem uma grande serventia em POO, para encapsular ou ocultar variaveis.
  * Fazer e explicar o exemplo de once, debounce(fn, ms) do zero.
  */
 
 // S7. Closures na prática: escreve debounce(fn, ms) do zero.
 //once(fn): retorna uma função que executa fn so na primeira chamada. Nas seguintes, não executa de novo e devolve o resultado da primeira.
+function once(fn) {
+   let executou = false;
+   let resultado;
+
+   return function() {
+      if (!executou) {
+         resultado = fn()
+         executou = true;
+      }
+      return resultado;
+   }
+}
+
+const sortear = once(() => Math.random().toFixed(3))
+console.log(sortear())
+console.log(sortear())
+
+
+function once2(fn) {
+   let start = false;
+   let result;
+   return function() {
+      if(!start){
+         result = fn;
+         start = true;
+         console.log("Feito!")
+      }
+      return result;
+   }
+}
+const teste = once2(() => "Agora foi feito!")
+console.log(teste())

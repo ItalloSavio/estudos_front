@@ -3,9 +3,10 @@ Já estudei, mas a regra de pular só vale para o que fizeres sozinho e explicar
 [x] S4. Escopo e hoisting: prevê a saída de 5 trechos antes de rodar.
 [x] S5. Execution context e call stack: desenha a pilha de um código com 3 funções.
 [x] S6. Closures: cria counter().
-[ ] S7. Closures na prática: escreve once(fn), debounce(fn, ms) do zero.
-[ ] S8. this, call e bind: corrige 5 trechos com o this errado.
+[x] S8. this, call e bind: corrige 5 trechos com o this errado.
 [ ] S9. reduce: faz soma, contagem e groupBy.
+Atividade para o Sábado! {Fazer o algoritmo de once, debouce}
+[ ] S7. Closures na prática: escreve once(fn), debounce(fn, ms) do zero.
 [ ] S10. Reescreve map, filter e reduce à mão.
 [ ] S11. Destructuring, spread e rest: atualiza um objeto aninhado sem mutar.
 [ ] S12. Shallow e deep copy: reproduz um bug de cópia rasa e corrige.
